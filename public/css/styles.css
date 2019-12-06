@@ -47,3 +47,8 @@ padding: 8px;
 #msg-2 {
     color: lightseagreen;
 }
+
+img {
+    width: 200px;
+    padding: 20px;
+}
