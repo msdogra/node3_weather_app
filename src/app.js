@@ -4,6 +4,7 @@ const foreCast =  require('./utils/forcecast')
 const path = require('path')
 const hbs = require('hbs')
 const app = express()
+const port = process.env.PORT || 3000
 
 // PAth Variables
 const publicDirPath = path.join(__dirname, '../public')
@@ -94,6 +95,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Web Server Started')
+app.listen(port, () => {
+    console.log('Web Server Started on port '+port)
 })
